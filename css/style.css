@@ -32,6 +32,7 @@ img {
 body {
   max-width: 1920px;
   margin: auto;
+  background-color: #EEEEEE;
 }
 
 /* header */
@@ -261,4 +262,126 @@ line-height: 150%;
     font-weight: 400;
     font-size: 17px;
     line-height: 150%;
+}
+
+/* main-banner-container-left */
+
+.main-banner {
+    background-color: #000;
+    background-image: url('../img/Bg 2.png');
+    width: 1920px;
+    height: 700px;
+    
+}
+
+.main-banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-banner-container-left {
+  color: #BB8C5F;
+  padding-top: 110px;
+  padding-left: 352px;
+}
+
+.main-banner-container-left p {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 140%;
+  color: #FAF6F2;
+  width: 431px;
+  height: 70px;
+  margin-top: 30px;
+}
+
+.main-banner-button {
+  background-image: url('../img/Rectangle 68.svg');
+  width: 200px;
+  height: 50px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  width: 275px;
+  height: 70px;
+  margin-top: 60px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.main-banner-container-left h1 {
+  font-family: 'Forum', serif;
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 100%;
+  width: 594px;
+}
+
+
+/* main-banner-container-right */
+
+.main-banner-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-right: 352px;
+}
+
+.main-banner-prev-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+}
+
+
+.main-banner-next-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;  
+  width: 58px;
+  height: 40px;
+}
+
+/* main-banner-dot-buttons */
+
+.main-banner-dot-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-banner-dot-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+}
+
+.main-banner-dot-button img {
+  width: 16px;
+  height: 16px;
+}
+
+/* catalog-container */
+
+.catalog-container {
+  background-color: #EEEEEE;
+  margin-top: 120px;
+}
+
+.choose-category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 115%;  
+  color: #3E424B;
+  gap: 60px;
+}
+
+.catalog-container {
+  
 }
