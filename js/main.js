@@ -36,4 +36,31 @@ document.addEventListener('DOMContentLoaded', () => {
     prevButton.addEventListener('click', prevSlide);
 
     updateActiveDot(currentSlide);
+
+    const productCards = document.querySelectorAll('.catalog-item');
+
+    productCards.forEach(card => {
+        const imageWrapper = card.querySelector('.catalog-item__image-wrapper');
+        if (!imageWrapper) return;
+
+        const imageData = imageWrapper.dataset.images;
+        if (!imageData) return;
+
+        const images = JSON.parse(imageData);
+        const mainImage = card.querySelector('.catalog-item__image');
+        const dots = card.querySelectorAll('.catalog-item__slider-dots img');
+
+        if (images.length === 0 || !mainImage || dots.length === 0) return;
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                if (images[index]) {
+                    mainImage.src = images[index];
+
+                    dots.forEach(d => d.src = './img/square.svg');
+                    dot.src = './img/active-square.svg';
+                }
+            });
+        });
+    });
 });
