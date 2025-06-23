@@ -267,11 +267,11 @@ line-height: 150%;
 /* main-banner-container-left */
 
 .main-banner {
+    overflow: hidden;
     background-color: #000;
     background-image: url('../img/Bg 2.png');
-    width: 1905px;
+    width: 100%;
     height: 700px;
-    
 }
 
 .main-banner-container {
@@ -509,4 +509,109 @@ line-height: 150%;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.catalog-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.catalog-button {
+  background-image: url('../img/white-button.svg');
+  width: 275px;
+  height: 70px;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  align-self: center;
+  color: #BB8C5F;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+/* catalog-tovari */
+.catalog-tovari {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.catalog-tovari h2 {
+  font-family: 'Forum', serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  color: #3E424B;
+}
+
+.catalog-tovari-items {
+  display: grid;
+  grid-template-columns: repeat(4, 289px);
+  grid-auto-rows: 289px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.catalog-tovari-item {
+  background-color: #F5F5F5;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalog-tovari-item h3 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 115%;
+  color: #3E424B;
+}
+
+.catalog-tovari-item img {
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
+  align-self: flex-end;
+}
+
+.catalog-tovari-item.item-1 {
+  grid-column: span 2;
+}
+
+.catalog-tovari-item.item-2 {
+  grid-column: span 2;
+}
+
+.catalog-tovari-item.item-3 {
+  grid-column: span 1;
+}
+
+.catalog-tovari-item.item-4 {
+  grid-column: span 2;
+}
+
+.catalog-tovari-item.item-5 {
+  grid-column: span 1;
+}
+
+.catalog-tovari-item.item-6 {
+  grid-column: span 1;
+}
+
+.catalog-tovari-item.item-7 {
+  grid-column: span 1;
+}
+
+.catalog-tovari-item.item-8 {
+  grid-column: span 2;
 }
