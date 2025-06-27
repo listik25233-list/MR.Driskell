@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="/css/second.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="header-container-up">
+        <div class="header-container-up-left">
+            <div class="phone-number">
+                <div class="phone-number-container">
+                    <img src="./img/Call.svg" alt="phone">
+                    <p>+7 952 552-52-52</p>
+                </div>
+                <div class="chats">
+                    <a href="#0">Viber</a>
+                    <a href="#0">WhatsApp</a>
+                    <a href="#0">Telegram</a>
+                </div>
+            </div>
+            <div class="mail">
+                <img src="./img/mail.svg" alt="mail">
+                <p>Mr.Driskell@mail.ru</p>
+            </div>
+        </div>
+        <a class="header-logo">
+            <img src="./img/logo.svg" alt="logo">
+        </a>
+        <div class="header-container-up-right">
+            <div class="basket">
+                <p>37 280 ₽</p>
+                <img src="./img/basket.svg" alt="basket">
+                <div class="basket-count">
+                    <p>1</p>
+                </div>
+            </div>
+            <a href="#0" class="favorite">
+                <img src="./img/favorite.svg" alt="favorite">
+            </a>
+            <a href="#0" class="account">
+                <img src="./img/account.svg" alt="account">
+            </a>
+        </div>
+    </div>
+    <img src="./img/dividers.svg" alt="divider" class="divider">
+    <div class="header-container-down">
+        <div class="catalog-search-wrapper">
+            <div class="catalog-title-wrapper">
+                <h2 class="catalog-title">Каталог</h2>
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <form class="search-form">
+                <span class="search-icon"></span>
+                <input type="text" placeholder="Поиск" />
+            </form>
+        </div>
+        <nav class="links-catalog">
+            <a href="#0">Промокоды</a>
+            <a href="#0">Скидки</a>
+            <a href="#0">Помощь</a>
+            <a href="#0">О нас</a>
+            <a href="#0">Контакты</a>
+        </nav>
+    </div>
+</header>
+    <section>
+    <div class="container">
+        <div class="search-block">
+            <div class="chena">
+                <span class="ctxt">Цена</span>
+                    <input type="number" placeholder="От" class="input2" min="0">
+                    <span>-</span>
+                <input type="number" placeholder="До" class="input2" min="0">
+            </div>
+
+                        <div class="type">
+                <span class="ctxt">Тип машинки</span>
+            <select  name="Роторная" class="spisok">
+                <option class="">Роторная</option>
+            </select>
+            </div>
+            <div class="nalichie">
+                 <span class="ctxt">Только в наличии</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slibeb"></span>
+            </label>
+            </div>
+            <div class="type">
+                <span class="ctxt">Сортировка</span>
+            <select  name="Популярные" class="spisok">
+                <option value="q">Популярные</option>
+                <option value="w">По алфавиту</option>
+                <option value="e">Дешёвые</option>
+                <option value="r">Дорогие</option>
+            </select>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="catalog-container">
+      <div class="catalog-items-container">
+          <article class="catalog-item">
+              <div class="catalog-item__image-wrapper" data-images='["./img/foxxx.png", "./img/", "./img/", "./img/"]'>
+                  <img class="catalog-item__image" src="./img/foxxx.png" alt="Foxxx Kitsune Mini Black Vintage RCA">
+                  <img class="catalog-item__new-label" src="./img/new.svg" alt="new">
+                  <button class="catalog-item__fav-icon" alt="favorite icon"></button>
+                  <div class="catalog-item__slider-dots">
+                      <img src="./img/active-square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                  </div>
+              </div>
+              <div class="catalog-item__info">
+                  <h4 class="catalog-item__title">Foxxx Kitsune Mini Black Vintage RCA</h4>
+                  <p class="catalog-item__price">6 000 ₽</p>
+              </div>
+              <button class="catalog-item__button">добавить в корзину</button>
+          </article>
+          <article class="catalog-item">
+              <div class="catalog-item__image-wrapper" data-images='["./img/foxxx.png", "./img/", "./img/", "./img/"]'>
+                  <img class="catalog-item__image" src="./img/golden.png" alt="Foxxx Kitsune Mini Black Vintage RCA">
+                  <img class="catalog-item__new-label" src="./img/new.svg" alt="new">
+                  <button class="catalog-item__fav-icon" alt="favorite icon"></button>
+                  <div class="catalog-item__slider-dots">
+                      <img src="./img/active-square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                  </div>
+              </div>
+              <div class="catalog-item__info">
+                  <h4 class="catalog-item__title">Foxxx Viper Fox Golden Vintage Lot #1 RCA</h4>
+                  <p class="catalog-item__price">8 730 ₽</p>
+              </div>
+              <button class="catalog-item__button">добавить в корзину</button>
+          </article>
+          <article class="catalog-item">
+              <div class="catalog-item__image-wrapper" data-images='["./img/foxxx.png", "./img/", "./img/", "./img/"]'>
+                  <img class="catalog-item__image" src="./img/wally.png" alt="Foxxx Kitsune Mini Black Vintage RCA">
+                  <img class="catalog-item__new-label" src="./img/new.svg" alt="new">
+                  <button class="catalog-item__fav-icon" alt="favorite icon"></button>
+                  <div class="catalog-item__slider-dots">
+                      <img src="./img/active-square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                  </div>
+              </div>
+              <div class="catalog-item__info">
+                  <h4 class="catalog-item__title">Нитровиниловые перчатки Wally Plastic S</h4>
+                  <p class="catalog-item__price">20 ₽</p>
+              </div>
+              <button class="catalog-item__button">добавить в корзину</button>
+          </article>
+          <article class="catalog-item">
+              <div class="catalog-item__image-wrapper" data-images='["./img/foxxx.png", "./img/", "./img/", "./img/"]'>
+                  <img class="catalog-item__image" src="./img/forever.png" alt="Foxxx Kitsune Mini Black Vintage RCA">
+                  <img class="catalog-item__new-label" src="./img/new.svg" alt="new">
+                  <button class="catalog-item__fav-icon" alt="favorite icon"></button>
+                  <div class="catalog-item__slider-dots">
+                      <img src="./img/active-square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                  </div>
+              </div>
+              <div class="catalog-item__info">
+                  <h4 class="catalog-item__title">Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий</h4>
+                  <p class="catalog-item__price">2 037 ₽</p>
+              </div>
+              <button class="catalog-item__button">добавить в корзину</button>
+          </article>
+          <article class="catalog-item">
+              <div class="catalog-item__image-wrapper" data-images='["./img/foxxx.png", "./img/", "./img/", "./img/"]'>
+                  <img class="catalog-item__image" src="./img/oink.png" alt="Foxxx Kitsune Mini Black Vintage RCA">
+                  <img class="catalog-item__new-label" src="./img/new.svg" alt="new">
+                  <button class="catalog-item__fav-icon" alt="favorite icon"></button>
+                  <div class="catalog-item__slider-dots">
+                      <img src="./img/active-square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                  </div>
+              </div>
+              <div class="catalog-item__info">
+                  <h4 class="catalog-item__title">Verge Direct 2.1 Pink gip EGO 4 mm liners</h4>
+                  <p class="catalog-item__price">2 037 ₽</p>
+              </div>
+              <button class="catalog-item__button">добавить в корзину</button>
+          </article>
+          <article class="catalog-item">
+              <div class="catalog-item__image-wrapper" data-images='["./img/foxxx.png", "./img/", "./img/", "./img/"]'>
+                  <img class="catalog-item__image" src="./img/drive.png" alt="Foxxx Kitsune Mini Black Vintage RCA">
+                  <img class="catalog-item__new-label" src="./img/new.svg" alt="new">
+                  <button class="catalog-item__fav-icon" alt="favorite icon"></button>
+                  <div class="catalog-item__slider-dots">
+                      <img src="./img/active-square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                  </div>
+              </div>
+              <div class="catalog-item__info">
+                  <h4 class="catalog-item__title">Deuce Machines Direct Drive #7 RCA Samurai</h4>
+                  <p class="catalog-item__price">8 000 ₽</p>
+              </div>
+              <button class="catalog-item__button">добавить в корзину</button>
+          </article>
+          <article class="catalog-item">
+              <div class="catalog-item__image-wrapper" data-images='["./img/foxxx.png", "./img/", "./img/", "./img/"]'>
+                  <img class="catalog-item__image" src="./img/sexy.png" alt="Foxxx Kitsune Mini Black Vintage RCA">
+                  <img class="catalog-item__new-label" src="./img/new.svg" alt="new">
+                  <button class="catalog-item__fav-icon" alt="favorite icon"></button>
+                  <div class="catalog-item__slider-dots">
+                      <img src="./img/active-square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                  </div>
+              </div>
+              <div class="catalog-item__info">
+                  <h4 class="catalog-item__title">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</h4>
+                  <p class="catalog-item__price">11 000 ₽</p>
+              </div>
+              <button class="catalog-item__button">добавить в корзину</button>
+          </article>
+          <article class="catalog-item">
+              <div class="catalog-item__image-wrapper" data-images='["./img/foxxx.png", "./img/", "./img/", "./img/"]'>
+                  <img class="catalog-item__image" src="./img/verge.png" alt="Foxxx Kitsune Mini Black Vintage RCA">
+                  <img class="catalog-item__new-label" src="./img/new.svg" alt="new">
+                  <button class="catalog-item__fav-icon" alt="favorite icon"></button>
+                  <div class="catalog-item__slider-dots">
+                      <img src="./img/active-square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                      <img src="./img/square.svg" alt="square">
+                  </div>
+              </div>
+              <div class="catalog-item__info">
+                  <h4 class="catalog-item__title">Verge Direct 2.1 Gunmetal</h4>
+                  <p class="catalog-item__price">10 900 ₽</p>
+              </div>
+              <button class="catalog-item__button">добавить в корзину</button>
+          </article>
+      </div>
+      <div class="catalog-button-container">
+          <button class="catalog-button">Показать ещё</button>
+      </div>
+  </section>
+    <section>
+       <div class="footer">
+          <div class="container">
+          <div class="right">
+            <div class="group">
+              <div class="phone">
+                <div class="text-wrapper">8 800 600-61-91</div>
+                <div class="img-wrapper"><img class="call" src="img/call.png" /></div>
+              </div>
+              <div class="div">
+                <img class="telegram-black" src="img/Telegram_black.svg" />
+                <img class="viber" src="img/Viber.svg" />
+                <img class="combined-shape-path" src="img/Viber (1).svg" />
+                <div class="group-wrapper">
+                  <div class="combined-shape-path-wrapper">
+                  </div>
+                </div>
+              </div>
+              <div class="text-wrapper-2">Время работы: с 9:00 до 20:00 по мск</div>
+            </div>
+            <div class="mail">
+              <div class="img-wrapper"><img class="union" src="img/union.svg" /></div>
+              <div class="text-wrapper">Mr.Driskell@mail.ru</div>
+            </div>
+          </div>
+          <div class="overlap">
+            <div class="left">
+              <div class="menu">
+                <div class="flexcontainer">
+                  <p class="text-i">
+                    <a href="/error.html" class="sylky"><span class="span">Промокоды<br /></span></a>
+                  </p>
+                  <p class="text-i">
+                    <a href="/error.html" class="sylky"><span class="span">Скидки<br /></span></a>
+                  </p>
+                  <button class="sylky" id="openModal"><p class="text-i"><span class="span">Помощь</span></p></button>
+                </div>
+                <div class="flexcontainer-i">
+                  <p class="text-i">
+                    <a href="/error.html" class="sylky"><span class="span">О нас<br /></span></a>
+                  </p>
+                  <a href="/error.html" class="sylky"><p class="text-i"><span class="span">Контакты</span></p></a>
+                </div>
+              </div>
+              <a href="/second.html" class="sylky"><div class="logo">
+                <img src="img/logo.png" class="" alt="">
+              </div></a>
+            </div>
+            <a href="/error.html" class="sylky"><div class="down"><div class="text-wrapper-3">Политика конфенедциальности</div></div></a>
+          </div>
+          <img class="dividers" src="img/dividers.png" />
+        </div>
+        </div>
+        </section>
+        <section>
+        <div class="popup" id="popup">
+          <div class="popup-content">
+        <div class="modal-header">
+            <div class="modal-title">Личный кабинет</div>
+            <div class="modal-close" id="modalClose">&times;</div>
+        </div>
+        <div class="modal-content">
+            <form id="callbackForm">
+                <div class="form-group">
+                    <span class="form-txt">Введите номер</span>
+                    <input type="tel" name="name" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="input-txt">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" form="callbackForm" class="btnform">
+            <span class="btnformtxt"><span class="pct-butt"><img src="/img/Group 255.svg" class=""></span></span>
+          </button>
+        </div>
+        <div class="checkall">
+        <input type="checkbox" id="myCheckbox">
+        <label for="myCheckbox" >
+          <span class="checkbox-txt">При воходе или регистрации вы соглашаетесь с условиями предоставления сервиса</span>
+        </label>
+        </div>
+          </div>
+        </div>
+        </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

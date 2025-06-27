@@ -4,38 +4,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.querySelector('.main-banner-next-button');
     let currentSlide = 0;
 
-    function updateActiveDot(index) {
-        dotButtons.forEach((dot, i) => {
-            const img = dot.querySelector('img');
-            if (i === index) {
-                img.src = './img/dot-active.svg';
-            } else {
-                img.src = './img/dot.svg';
-            }
-        });
-    }
+    if (dotButtons.length > 0 && prevButton && nextButton) {
+        function updateActiveDot(index) {
+            dotButtons.forEach((dot, i) => {
+                const img = dot.querySelector('img');
+                if (i === index) {
+                    img.src = './img/dot-active.svg';
+                } else {
+                    img.src = './img/dot.svg';
+                }
+            });
+        }
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % dotButtons.length;
-        updateActiveDot(currentSlide);
-    }
-
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + dotButtons.length) % dotButtons.length;
-        updateActiveDot(currentSlide);
-    }
-
-    dotButtons.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentSlide = index;
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % dotButtons.length;
             updateActiveDot(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + dotButtons.length) % dotButtons.length;
+            updateActiveDot(currentSlide);
+        }
+
+        dotButtons.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                updateActiveDot(currentSlide);
+            });
         });
-    });
 
-    nextButton.addEventListener('click', nextSlide);
-    prevButton.addEventListener('click', prevSlide);
+        nextButton.addEventListener('click', nextSlide);
+        prevButton.addEventListener('click', prevSlide);
 
-    updateActiveDot(currentSlide);
+        updateActiveDot(currentSlide);
+    }
 
     const productCards = document.querySelectorAll('.catalog-item');
 
@@ -63,4 +65,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    const OpnModal = document.getElementById('openModal');
+    const Clsmodal = document.getElementById('modalClose');
+    const modal = document.getElementById('popup');
+
+    if (OpnModal && Clsmodal && modal) {
+        OpnModal.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+
+        Clsmodal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    }
 });

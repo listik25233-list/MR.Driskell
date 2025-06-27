@@ -1,0 +1,76 @@
+
+* {
+    margin: 0;
+}
+
+
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+.container1 {
+    max-width: 1376px;
+    margin: 0 auto;
+}
+
+
+.error {
+    width: 523px;
+    height: 285px;
+    margin-top: 160px;
+}
+
+.oshipka {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 100%;
+    color: #bb8c5f;
+}
+
+.opis-oship {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    color: #3e424b;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+.button-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    margin-left: -6px;
+}
+
+.text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #bb8c5f;
+}
+
+
+.line1 {
+    margin-left: -3px;
+    position: absolute;
+}
+
+.all-block {
+    display: flex;
+}
+
+.pct {
+    margin-left: 58px;
+}
